@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<partial name="PartialViews/_Seo" />
+	<partial name="PartialViews/_OpenGraph" />
+	<partial name="PartialViews/_FavoriteIcon" />
+	<partial name="PartialViews/_StyleSheets" />
+
+	@(RenderSection(name: "StyleSheets", required: false))
+</head>
+
+<body>
+	<partial name="PartialViews/_Header" />
+
+	<main id="main" class="container-fluid">
+		@(RenderBody())
+	</main>
+
+	<partial name="PartialViews/_Footer" />
+	<partial name="PartialViews/_Scripts" />
+
+	@(RenderSection(name: "Scripts", required: false))
+</body>
+</html>

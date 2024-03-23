@@ -1,0 +1,80 @@
+﻿.form-check-input[disabled] ~ .form-check-label, .form-check-input:disabled ~ .form-check-label {
+	opacity: 1 !important;
+}
+
+#header {
+	font-size: 20px !important;
+	margin-bottom: 60px !important;
+	font-family: 'Times New Roman' !important;
+}
+
+#main {
+	margin-bottom: 30px !important;
+}
+
+#footer {
+	color: black !important;
+	font-weight: bold !important;
+	font-size: medium !important;
+	font-family: 'Comic Sans MS' !important;
+	background-color: rgb(189, 234, 220) !important;
+}
+
+#welcome {
+	width: 100% !important;
+	color: white !important;
+	padding: 0px !important;
+	height: 100vh !important;
+	display: flex !important;
+	border: dashed !important;
+	font-weight: 900 !important;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	font-size: xx-large !important;
+	align-items: center !important;
+	box-sizing: border-box !important;
+	justify-content: center !important;
+	border: 10px solid white !important;
+	font-family: Edwardian Script ITC !important;
+	background: radial-gradient(circle at center, #d451a6, #00040e) !important;
+}
+
+#profilePhoto {
+	display: flex !important;
+	margin-top: 3rem !important;
+	align-items: center !important;
+	align-content: center !important;
+	justify-content: center !important;
+}
+
+
+.filter {
+	width: 50%;
+	color: white;
+	margin: 200px;
+	object-fit: cover;
+	padding-left: 80px;
+	margin-right: 40px;
+	background-size: cover;
+	object-position: center;
+	background-size: 100% 100%;
+	background-position: 0 40%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	filter: blur(1px) brightness(70%) /*contrast(70%)*/ drop-shadow(20px 20px 5px rgba(0, 0, 0, 0.6));
+}
+
+	.filter:hover {
+		filter: blur(0px) brightness(100%) contrast(100%)
+	}
+
+.lineargradient {
+	/*	width: 100%;
+	padding: 20px;
+	height: 400px;
+	box-sizing: border-box;*/
+	border: 1px solid black;
+	/*background: linear-gradient(180deg,rgb(121, 243, 249), rgb(228, 138, 248));
+	background: linear-gradient(to right,rgb(121, 243, 249), rgb(228, 138, 248)); */
+	background: linear-gradient(220deg, rgb(88, 196, 226) 50%, rgb(39, 38, 39)) !important;
+}
