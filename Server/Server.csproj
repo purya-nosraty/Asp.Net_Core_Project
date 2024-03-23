@@ -7,7 +7,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Folder Include="Documents\" />
 		<Folder Include="wwwroot\Images\" />
 		<Folder Include="wwwroot\fonts\" />
 	</ItemGroup>

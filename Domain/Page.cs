@@ -117,7 +117,7 @@ public class Page :
 	//	(Constants.RegularExpression.file.Text.RegularExpressions.Patterns.FileName,
 	//	ErrorMessageResourceType = typeof(Resources.Messages.Errors),
 	//	ErrorMessageResourceName = nameof(Resources.DataDictionary.FileManager)]
-	public string Name { get; set; }
+	public string? Name { get; set; }
 	#endregion /Username Property
 
 
