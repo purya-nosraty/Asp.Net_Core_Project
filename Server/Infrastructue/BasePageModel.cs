@@ -1,7 +1,8 @@
-﻿namespace Infrastructure;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 
-public abstract class BasePageModel :
-	Microsoft.AspNetCore.Mvc.RazorPages.PageModel
+namespace Infrastructure;
+
+public abstract class BasePageModel : PageModel
 {
 	public BasePageModel() : base()
 	{
