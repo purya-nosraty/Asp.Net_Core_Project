@@ -9,6 +9,7 @@
 }
 
 #main {
+	margin-right: 5px !important;
 	margin-bottom: 30px !important;
 }
 
@@ -77,4 +78,21 @@
 	/*background: linear-gradient(180deg,rgb(121, 243, 249), rgb(228, 138, 248));
 	background: linear-gradient(to right,rgb(121, 243, 249), rgb(228, 138, 248)); */
 	background: linear-gradient(220deg, rgb(88, 196, 226) 50%, rgb(39, 38, 39)) !important;
+}
+
+
+.rtl {
+	direction: rtl !important;
+	font-size: 25px !important;
+	margin-top: 20px !important;
+	padding-top: 30px !important;
+	font-weight: bold !important;
+	margin-bottom: 60px !important;
+	font-family: 'B Nazanin' !important;
+}
+
+#contactPage {
+	margin: 0px !important;
+	padding-right: 20px !important;
+	background: linear-gradient(220deg, white 10%, #d451a6 60%, black) !important;
 }
