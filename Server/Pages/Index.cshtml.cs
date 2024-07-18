@@ -15,7 +15,7 @@ public class IndexModel : Infrastructure.BasePageModel
 	public void OnGet()
 	{
 		FullName = "Pouria Nosrati";
-		ViewData["Title"] = "Home";
+		ViewData["PageTitle"] = Resources.PageTitles.Index;
 
 		//throw new Exception(message: "error");
 	}

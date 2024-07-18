@@ -1,24 +1,30 @@
-﻿<!DOCTYPE html>
+﻿@{
+	var cultureName =
+		System.Threading.Thread
+		.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName;
+}
+
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
 	<partial name="PartialViews/_Seo" />
 	<partial name="PartialViews/_OpenGraph" />
-	<partial name="PartialViews/_StyleSheets" />
 	<partial name="PartialViews/_FavoriteIcon" />
+	<partial name="PartialViews/Ltr/_StyleSheets" />
 
 	@(RenderSection(name: "StyleSheets", required: false))
 </head>
 
 <body>
-	<partial name="PartialViews/_Header" />
+	<partial name="PartialViews/Ltr/_Header" />
 
 	<main id="main">
 		@(RenderBody())
 	</main>
 
-	<partial name="PartialViews/_Footer" />
-	<partial name="PartialViews/_Scripts" />
+	<partial name="PartialViews/Ltr/_Footer" />
+	<partial name="PartialViews/Ltr/_Scripts" />
 
 	@(RenderSection(name: "Scripts", required: false))
 </body>

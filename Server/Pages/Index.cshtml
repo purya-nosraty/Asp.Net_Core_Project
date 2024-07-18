@@ -1,8 +1,15 @@
 ﻿@page
 @model Server.Pages.IndexModel
 @{
-	ViewData["Title"] = "Home";
+	var pageTitle =
+		Resources.PageTitles.Index;
+
+	ViewData["PageTitle"] = pageTitle;
 }
+
+<h3>
+	@(pageTitle)
+</h3>
 
 <div id="welcome">
 	<h1>

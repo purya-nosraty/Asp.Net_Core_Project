@@ -1,18 +1,23 @@
 ﻿@page
 @model Server.Pages.ContactModel
 @{
-	ViewData["Title"] = "Contact";
+	ViewData["PageTitle"] = "Contact";
 }
 
 <div id="contactPage">
 	<div class="row">
 		<div class="col rtl">
-			شماره تلفن همراه:
+			@(Resources.DataDictionary.CellPhoneNumber)
 			<a href="tel: 09356685894">09356685894</a>
+
 			<hr />
-			نشانی پست الکترونیک:
+
+			@(Resources.DataDictionary.EmailAddress)
 			<a href="mailto: purya.nosraty@gmail.com" target="_blank">purya.nosraty@gmail.com</a>
+
 			<hr />
+
+			@(Resources.DataDictionary.SocialNetworks)
 			نشانی واتساپ:
 			<a href="https://api.whatsapp.com/send?phone=09356685894" target="_blank">09356685894</a>
 			<hr />

@@ -2,8 +2,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 
-var builder =
-	WebApplication.CreateBuilder();
+var builder = WebApplication.CreateBuilder();
 
 builder.Services.AddRazorPages();
 
@@ -24,5 +23,6 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseMiddleware<Infrastructue.Middlewares.CultureCookieHandlingMiddleware>();
 app.MapRazorPages();
 app.Run();

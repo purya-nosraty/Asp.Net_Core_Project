@@ -531,4 +531,16 @@
   <data name="Special" xml:space="preserve">
     <value>خاص</value>
   </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>ورود</value>
+  </data>
+  <data name="SignOut" xml:space="preserve">
+    <value>خروج</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>ثبت نام</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>مشخصات</value>
+  </data>
 </root>

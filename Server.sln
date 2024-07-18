@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Access Layer", "Data A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation Layer", "Presentation Layer", "{019957BC-CF9D-4ED1-8959-BC7D2F709B29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{64D061D7-5D8A-43A0-A000-5D8942A22B83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Persistence\Persistence.csproj", "{64D061D7-5D8A-43A0-A000-5D8942A22B83}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain Models", "Domain Models", "{B06D81CA-7896-4A90-AF15-C0BAEC05A13F}"
 EndProject
@@ -17,21 +17,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{DD4739B3-9784-4DED-BFB1-DC389B7AD2C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{4E6B83EC-D695-4245-B4D6-B162C2A44A4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{4E6B83EC-D695-4245-B4D6-B162C2A44A4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModels", "ViewModels\ViewModels.csproj", "{428E20A0-AA18-42BB-8BA3-195F7417CEAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViewModels", "ViewModels\ViewModels.csproj", "{428E20A0-AA18-42BB-8BA3-195F7417CEAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dtat", "Dtat\Dtat.csproj", "{6800CA40-95D8-4736-8841-B012359728BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dtat", "Dtat\Dtat.csproj", "{6800CA40-95D8-4736-8841-B012359728BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources", "Resources\Resources.csproj", "{A21FD474-8752-43BD-925C-0A0C2CAF8A0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resources", "Resources\Resources.csproj", "{A21FD474-8752-43BD-925C-0A0C2CAF8A0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constants", "Constants\Constants.csproj", "{5B33BB93-E9AC-489D-8C4C-482D3C286D06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Constants", "Constants\Constants.csproj", "{5B33BB93-E9AC-489D-8C4C-482D3C286D06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dtat.Seedwork.Abstractions", "Dtat.Seedwork.Abstractions\Dtat.Seedwork.Abstractions.csproj", "{E409CC84-909F-41F3-A830-8B756A9B4F39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dtat.Seedwork.Abstractions", "Dtat.Seedwork.Abstractions\Dtat.Seedwork.Abstractions.csproj", "{E409CC84-909F-41F3-A830-8B756A9B4F39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dtat.StateMachine", "Dtat.StateMachine\Dtat.StateMachine.csproj", "{536E7B3C-CEDC-4275-B7E6-F5F2BE760197}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dtat.StateMachine", "Dtat.StateMachine\Dtat.StateMachine.csproj", "{536E7B3C-CEDC-4275-B7E6-F5F2BE760197}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dtat.StateMachine.Abstractions", "Dtat.StateMachine.Abstractions\Dtat.StateMachine.Abstractions.csproj", "{B3F4614C-D0AA-4CB0-97FE-0774759E2F86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dtat.StateMachine.Abstractions", "Dtat.StateMachine.Abstractions\Dtat.StateMachine.Abstractions.csproj", "{B3F4614C-D0AA-4CB0-97FE-0774759E2F86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

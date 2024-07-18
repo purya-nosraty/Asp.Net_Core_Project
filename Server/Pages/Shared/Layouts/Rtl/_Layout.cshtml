@@ -1,0 +1,31 @@
+﻿@{
+	var cultureName =
+		System.Threading.Thread
+		.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName;
+}
+
+<!DOCTYPE html>
+<html lang="@(cultureName)" dir="rtl">
+
+<head>
+	<partial name="PartialViews/_Seo" />
+	<partial name="PartialViews/_OpenGraph" />
+	<partial name="PartialViews/_FavoriteIcon" />
+	<partial name="PartialViews/Rtl/_StyleSheets" />
+
+	@(RenderSection(name: "StyleSheets", required: false))
+</head>
+
+<body>
+	<partial name="PartialViews/Rtl/_Header" />
+
+	<main id="main">
+		@(RenderBody())
+	</main>
+
+	<partial name="PartialViews/Rtl/_Footer" />
+	<partial name="PartialViews/Rtl/_Scripts" />
+
+	@(RenderSection(name: "Scripts", required: false))
+</body>
+</html>
