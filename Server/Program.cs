@@ -1,11 +1,27 @@
+using Infrastructue.Middlewares;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.DependencyInjection;
-using Infrastructue.Middlewares;
 
 var builder = WebApplication.CreateBuilder();
 
 builder.Services.AddRazorPages();
+
+builder.Services.Configure<RequestLocalizationOptions>(option =>
+{
+	var supportedCultures = new[]
+	{
+		new System.Globalization.CultureInfo(name: "fa-IR"),
+		new System.Globalization.CultureInfo(name: "en-US"),
+	};
+
+	option.SupportedCultures = supportedCultures;
+	option.SupportedUICultures = supportedCultures;
+
+	option.DefaultRequestCulture =
+		new Microsoft.AspNetCore.Localization
+		.RequestCulture(culture: "fa-IR", uiCulture: "fa-IR");
+});
 
 var app = builder.Build();
 
@@ -26,7 +42,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 //app.UseMiddleware<Infrastructue.Middlewares.CultureCookieHandlingMiddleware>();
-app.UseCultureCookieHandlingMiddleware();
+app.UseCultureCookie();
 
 app.MapRazorPages();
 app.Run();

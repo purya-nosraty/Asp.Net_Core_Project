@@ -48,10 +48,10 @@ namespace Server.Pages
 					}
 			}
 
-			CultureCookieHandlingMiddleware
+			CultureCookieHandlerMiddleware
 				.SetCulture(cultureName: name);
 
-			CultureCookieHandlingMiddleware
+			CultureCookieHandlerMiddleware
 				.CreateCookies(httpContext: HttpContext, cultureName: name);
 
 			return Redirect(url: httpReferer);

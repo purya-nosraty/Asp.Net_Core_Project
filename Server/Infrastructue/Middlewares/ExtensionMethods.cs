@@ -9,9 +9,9 @@ namespace Infrastructue.Middlewares
 		{
 		}
 
-		public static IApplicationBuilder UseCultureCookieHandlingMiddleware(this IApplicationBuilder app)
+		public static IApplicationBuilder UseCultureCookie(this IApplicationBuilder app)
 		{
-			return app.UseMiddleware<CultureCookieHandlingMiddleware>();
+			return app.UseMiddleware<CultureCookieHandlerMiddleware>();
 		}
 	}
 }
