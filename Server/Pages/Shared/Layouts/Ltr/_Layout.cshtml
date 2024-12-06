@@ -1,11 +1,11 @@
 ﻿@{
-	var cultureName =
+	var currentCultureName =
 		System.Threading.Thread
-		.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName;
+		.CurrentThread.CurrentUICulture.Name;
 }
 
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="@(currentCultureName)" dir="ltr">
 
 <head>
 	<partial name="PartialViews/_Seo" />

@@ -1,4 +1,9 @@
-﻿@{
+﻿@using System.Threading;
+@using Microsoft.Extensions.Options;
+@using Microsoft.AspNetCore.Builder;
+
+
+@* @{
 	var cultureName =
 		System.Threading.Thread
 		.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName;
@@ -19,5 +24,43 @@
 			English
 			<span class="flag-icon flag-icon-us"></span>
 		</a>
+	}
+</span> *@
+
+@inject IOptions<RequestLocalizationOptions>? requestLocalizationOptions
+
+@{
+	if (requestLocalizationOptions is null ||
+		requestLocalizationOptions.Value is null)
+	{
+		return;
+	}
+
+	var supportedUICulture =
+		requestLocalizationOptions.Value.SupportedCultures;
+
+	if (supportedUICulture is null ||
+		supportedUICulture?.Count <= 1)
+	{
+		return;
+	}
+
+	var currentCultureName =
+		Thread.CurrentThread.CurrentUICulture.Name;
+}
+
+<span class="d-flex">
+	@foreach (var item in supportedUICulture!)
+	{
+		var country = item.Name[3..].ToLower();
+		var language = item.NativeName[..(item.NativeName.IndexOf('(') - 1)];
+
+		if (currentCultureName != item.Name)
+		{
+			<a href="/ChangeCulture/@(item.Name)" class="nav-link text-dark">
+				@(language)
+				<span class="flag-icon flag-icon-@(country) style="font-size: 2em;"></span>
+			</a>
+		}
 	}
 </span>
