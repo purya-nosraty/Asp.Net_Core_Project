@@ -510,4 +510,43 @@
   <data name="Profile" xml:space="preserve">
     <value>Profile</value>
   </data>
+  <data name="Sites" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VerificationKeyExpireDateTime" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DisplayInContactUsPage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DisplayNameInContactUsPage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AccessType" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ApplicationHandler" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ApplicationHandlerManager" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ApplicationHandlers" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Permissions" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Public" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Registered" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Special" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdminSettings" xml:space="preserve">
+    <value>Admin Settings</value>
+  </data>
 </root>

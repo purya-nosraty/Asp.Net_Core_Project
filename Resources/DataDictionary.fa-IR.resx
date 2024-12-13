@@ -501,6 +501,24 @@
   <data name="ListOf" xml:space="preserve">
     <value>فهرست</value>
   </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>ورود</value>
+  </data>
+  <data name="SignOut" xml:space="preserve">
+    <value>خروج</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>ثبت نام</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>مشخصات</value>
+  </data>
+  <data name="Sites" xml:space="preserve">
+    <value>سایت‌ها</value>
+  </data>
+  <data name="VerificationKeyExpireDateTime" xml:space="preserve">
+    <value>زمان انقضا کد تایید پست الکترونیکی</value>
+  </data>
   <data name="DisplayInContactUsPage" xml:space="preserve">
     <value>نمایش در صفحه تماس با ما</value>
   </data>
@@ -531,16 +549,7 @@
   <data name="Special" xml:space="preserve">
     <value>خاص</value>
   </data>
-  <data name="SignIn" xml:space="preserve">
-    <value>ورود</value>
-  </data>
-  <data name="SignOut" xml:space="preserve">
-    <value>خروج</value>
-  </data>
-  <data name="SignUp" xml:space="preserve">
-    <value>ثبت نام</value>
-  </data>
-  <data name="Profile" xml:space="preserve">
-    <value>مشخصات</value>
+  <data name="AdminSettings" xml:space="preserve">
+    <value>تنظیمات مدیریتی</value>
   </data>
 </root>
