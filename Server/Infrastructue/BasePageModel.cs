@@ -4,7 +4,7 @@ namespace Infrastructure;
 
 public abstract class BasePageModel : PageModel
 {
-	public BasePageModel() : base()
+	protected BasePageModel() : base()
 	{
 	}
 }

@@ -511,10 +511,10 @@
     <value>Profile</value>
   </data>
   <data name="Sites" xml:space="preserve">
-    <value />
+    <value>Sites</value>
   </data>
   <data name="VerificationKeyExpireDateTime" xml:space="preserve">
-    <value />
+    <value>Verification Key Expire Date Time</value>
   </data>
   <data name="DisplayInContactUsPage" xml:space="preserve">
     <value />
@@ -548,5 +548,20 @@
   </data>
   <data name="AdminSettings" xml:space="preserve">
     <value>Admin Settings</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>{0} is Required!</value>
+  </data>
+  <data name="LengthRange" xml:space="preserve">
+    <value>{0} should be between {2} and {1} characters!</value>
+  </data>
+  <data name="MaxLength" xml:space="preserve">
+    <value>{0} can not be more than {1} characters!</value>
+  </data>
+  <data name="AuthorName" xml:space="preserve">
+    <value>Puria Nosrati</value>
+  </data>
+  <data name="DefaultPassword" xml:space="preserve">
+    <value>123456</value>
   </data>
 </root>

@@ -1,5 +1,5 @@
 /**
- * TinyMCE version 7.2.1 (2024-07-03)
+ * TinyMCE version 7.6.0 (2024-12-11)
  */
 
 (function () {
@@ -73,13 +73,15 @@
         icon: 'visualblocks',
         tooltip: 'Show blocks',
         onAction,
-        onSetup: toggleActiveState(editor, enabledState)
+        onSetup: toggleActiveState(editor, enabledState),
+        context: 'any'
       });
       editor.ui.registry.addToggleMenuItem('visualblocks', {
         text: 'Show blocks',
         icon: 'visualblocks',
         onAction,
-        onSetup: toggleActiveState(editor, enabledState)
+        onSetup: toggleActiveState(editor, enabledState),
+        context: 'any'
       });
     };
 

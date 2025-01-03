@@ -142,6 +142,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Puria Nosrati.
+        /// </summary>
+        public static string AuthorName {
+            get {
+                return ResourceManager.GetString("AuthorName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Birth Date.
         /// </summary>
         public static string BirthDate {
@@ -273,6 +282,15 @@ namespace Resources {
         public static string Deactive {
             get {
                 return ResourceManager.GetString("Deactive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 123456.
+        /// </summary>
+        public static string DefaultPassword {
+            get {
+                return ResourceManager.GetString("DefaultPassword", resourceCulture);
             }
         }
         
@@ -727,6 +745,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {0} should be between {2} and {1} characters!.
+        /// </summary>
+        public static string LengthRange {
+            get {
+                return ResourceManager.GetString("LengthRange", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Link.
         /// </summary>
         public static string Link {
@@ -768,6 +795,15 @@ namespace Resources {
         public static string Male {
             get {
                 return ResourceManager.GetString("Male", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} can not be more than {1} characters!.
+        /// </summary>
+        public static string MaxLength {
+            get {
+                return ResourceManager.GetString("MaxLength", resourceCulture);
             }
         }
         
@@ -1015,6 +1051,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {0} is Required!.
+        /// </summary>
+        public static string Required {
+            get {
+                return ResourceManager.GetString("Required", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Resume.
         /// </summary>
         public static string Resume {
@@ -1141,7 +1186,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Sites.
         /// </summary>
         public static string Sites {
             get {
@@ -1303,7 +1348,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Verification Key Expire Date Time.
         /// </summary>
         public static string VerificationKeyExpireDateTime {
             get {

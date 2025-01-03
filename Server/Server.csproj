@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<Nullable>enable</Nullable>
-		<TargetFramework>net8.0</TargetFramework>
+		<TargetFramework>net9.0</TargetFramework>
 		<!--<ImplicitUsings>enable</ImplicitUsings>-->
 	</PropertyGroup>
 
@@ -12,14 +12,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Constants\Constants.csproj" />
-		<ProjectReference Include="..\Domain\Domain.csproj" />
-		<ProjectReference Include="..\Dtat.Seedwork.Abstractions\Dtat.Seedwork.Abstractions.csproj" />
-		<ProjectReference Include="..\Dtat.StateMachine\Dtat.StateMachine.csproj" />
-		<ProjectReference Include="..\Dtat\Dtat.csproj" />
-		<ProjectReference Include="..\Persistence\Persistence.csproj" />
-		<ProjectReference Include="..\Resources\Resources.csproj" />
-		<ProjectReference Include="..\ViewModels\ViewModels.csproj" />
+	  <ProjectReference Include="..\..\Template\Solution\src\Domain\Domain.csproj" />
+	  <ProjectReference Include="..\..\Template\Solution\src\Persistence\Persistence.csproj" />
+	  <ProjectReference Include="..\..\Template\Solution\src\Shared\Shared.csproj" />
+	  <ProjectReference Include="..\Resources\Resources.csproj" />
 	</ItemGroup>
 
 </Project>

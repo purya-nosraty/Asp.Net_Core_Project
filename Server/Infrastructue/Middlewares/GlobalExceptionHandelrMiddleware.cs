@@ -18,7 +18,7 @@ public class GlobalExceptionHandelrMiddleware
 		{
 			await Next(httpContext);
 		}
-		catch (Exception ex)
+		catch (Exception)
 		{
 			httpContext.Response.Redirect
 				(location: "/Errors/Error", permanent: false);

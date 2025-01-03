@@ -1,5 +1,5 @@
 /**
- * TinyMCE version 7.2.1 (2024-07-03)
+ * TinyMCE version 7.6.0 (2024-12-11)
  */
 
 (function () {
@@ -21,13 +21,15 @@
 
     var global$4 = tinymce.util.Tools.resolve('tinymce.PluginManager');
 
+    const random = () => window.crypto.getRandomValues(new Uint32Array(1))[0] / 4294967295;
+
     let unique = 0;
     const generate = prefix => {
       const date = new Date();
       const time = date.getTime();
-      const random = Math.floor(Math.random() * 1000000000);
+      const random$1 = Math.floor(random() * 1000000000);
       unique++;
-      return prefix + '_' + random + unique + String(time);
+      return prefix + '_' + random$1 + unique + String(time);
     };
 
     const get$1 = customTabs => {
@@ -57,13 +59,15 @@
       editor.ui.registry.addButton('help', {
         icon: 'help',
         tooltip: 'Help',
-        onAction: dialogOpener
+        onAction: dialogOpener,
+        context: 'any'
       });
       editor.ui.registry.addMenuItem('help', {
         text: 'Help',
         icon: 'help',
         shortcut: 'Alt+0',
-        onAction: dialogOpener
+        onAction: dialogOpener,
+        context: 'any'
       });
     };
 
@@ -629,6 +633,11 @@
       {
         key: 'editimage',
         name: 'Image Editing',
+        type: 'premium'
+      },
+      {
+        key: 'uploadcare',
+        name: 'Image Optimizer Powered by Uploadcare',
         type: 'premium'
       },
       {
